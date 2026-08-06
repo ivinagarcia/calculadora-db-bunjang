@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Bunjang - Dark Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Bunjang</h1>
+        <p>Valores não incluem frete internacional, nem taxa da receita federal</p>
+
+        <label for="valor">Valor do item ($):</label>
+        <input type="number" id="valor" placeholder="Ex: 10" step="any">
+
+        <p style="text-align: left; margin-top: 15px; font-size: 14px; color: #666;">
+            Cotação fixa do Dólar: <strong>R$ 5,25</strong>
+        </p>
+
+        <button onclick="calcular()">Calcular Total</button>
+
+        <div id="resultado" class="resultado">
+            <!-- O resultado vai aparecer aqui -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
